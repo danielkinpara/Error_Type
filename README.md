@@ -1,1 +1,11 @@
-# Error_Type
+# Error Type
+
+In the many of the analyses this week, we know that the null hypothesis is false -- for example, we knew that the difference in average baby weight in the whole population is actually around  8.9. Thus, we are concerned with how often the decision rule allows us to conclude the that the null hypothesis is actually false. Put another way, we would like to quantify the Type II error rate of the test, or the probability that we fail to reject the null hypothesis when the alternative hypothesis is true.
+
+Unlike the Type I error rate, which we can characterize by assuming that the null hypothesis of "no difference" is true, the Type II error rate cannot be computed by assuming the alternative hypothesis alone because the alternative hypothesis alone does not specify a particular value for the difference, and thus does not nail down a specific distrbution for the t-value under the alternative.
+
+For this reason, when we study the Type II error rate of a hypothesis testing procedure, we need to assume a particular effect size, or hypothetical size of the difference between population means, that we wish to target. We ask questions like "What is the smallest difference I could reliably distinguish from 0 given my sample size N?", or more commonly, "How big does N have to be in order to detect that the absolute value of the difference is greater than zero?" Type II error control plays a major role in designing data collection procedures before you actually see the data so that you know the test you will run has enough sensitivity or power. Power is one minus the Type II error rate, or the probability that you will reject the null hypothesis when the alternative hypothesis is true.
+
+POWER AND ALPHA
+
+There are several aspects of a hypothesis test that affect its power for a particular effect size. Intuitively, setting a lower alpha decreases the power of the test for a given effect size because the null hypothesis will be more difficult to reject. This means that for an experiment with fixed parameters (i.e., with a predetermined sample size, recording mechanism, etc), the power o the hypothesis test trades off with its Type I error rate, no matter what effect size you target.
